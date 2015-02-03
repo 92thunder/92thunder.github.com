@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>数当てゲーム</title>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <nav class='navbar navbar-inverse navbar-static-top'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='./index.html'>
+            92thunder.github.io
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class='container'>
+      <input id='num'>
+      <button id='send'>SEND</button>
+      <div class='answer'></div>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script>
+      $('#send').on('click', function() {
+        $('#num').val('');
+      });
+    </script>
+  </body>
+</html>
